@@ -644,6 +644,13 @@ padding: 10px 0 10px;
     .red-btn:hover {
         color: white;
     }
+
+    @media (max-width: 700px){
+        .about-product h1{
+            font-size: 20px;
+        } 
+      
+    }
 /*---------blog-content---------*/
 .blog-content{
     width: 80%;
