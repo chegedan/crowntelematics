@@ -125,7 +125,7 @@ nav .fa{
     }
     nav .fa{
         display: block;
-        color:white;
+        color:#00455e;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -630,10 +630,10 @@ padding: 10px 0 10px;
        }
 .service_detail p{
     font-weight: 200;
-    font-size: 14px; x 
+    font-size: 14px; 
 }
 .service:hover{
-    transition: translate: -50%;
+    transition: translate -50%;
     box-shadow: 0 0 20px 0px rgba(255, 174, 0)
 }
     .red-btn{
