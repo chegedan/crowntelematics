@@ -155,7 +155,6 @@ h1{
 p{
     color: #00455e;
     font-size: 14px;
-    line-height: 22px;
     padding: 10px;
     font-weight: 500;
 }
@@ -517,6 +516,9 @@ input[name="radio_btn"]{
     margin-left: -60%;
 } */
 
+/*---------products---------*/
+
+  
 .row_products{
     margin-top: 2%;
     display: flex;
@@ -536,6 +538,7 @@ input[name="radio_btn"]{
     border-radius: 10px;
 } 
 .about-product h1{
+    font-size: 20px;
 padding-top: 0;
 margin-top: 0;
 }
@@ -549,6 +552,7 @@ padding: 10px 0 10px;
     justify-content: space-between;
     width: 100%;
     }
+  /*---------products one---------*/
 .collapsible{
     margin-top: 0;
     overflow:hidden;
@@ -556,7 +560,6 @@ padding: 10px 0 10px;
     border-radius: 10px;
     border-color: #00455e;
 }
-
 .collapsible input{
    display: none; 
 }
@@ -582,6 +585,8 @@ padding: 10px 0 10px;
         top: 10px;
 
     }
+
+   
 .collapsible-text{
     max-height: 1px;
     overflow: hidden;
@@ -594,6 +599,7 @@ padding: 10px 0 10px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    overflow-x: auto; 
 }
 .collapsible input:checked~ .collapsible-text{
     max-height: 300px;
@@ -601,6 +607,117 @@ padding: 10px 0 10px;
     opacity: 1;
     top:0;
 }
+
+  /*---------products two---------*/
+   
+.collapsible2{
+    margin-top: 0;
+    overflow:hidden;
+    font-weight: 600;
+    border-radius: 10px;
+    border-color: #00455e;
+}
+.collapsible2 input{
+   display: none; 
+}
+
+.collapsible2 label{
+    text-align: center;
+    position: relative;
+    cursor:pointer ;
+    display: block;
+    z-index: 1;
+    color: #00455e;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #FFAE00;
+    padding: 10px;
+    margin:1% 40%;
+        }
+
+.collapsible2 label:after{
+        content: "";
+        position: absolute;
+        height: 18px;
+        top: 10px;
+
+    }
+
+   
+.collapsible-text2{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: auto; 
+}
+.collapsible2 input:checked~ .collapsible-text2{
+    max-height: 300px;
+    box-shadow: coral;
+    opacity: 1;
+    top:0;
+}
+  /*---------products three---------*/
+  .collapsible3{
+    margin-top: 0;
+    overflow:hidden;
+    font-weight: 600;
+    border-radius: 10px;
+    border-color: #00455e;
+}
+.collapsible3 input{
+   display: none; 
+}
+
+.collapsible3 label{
+    text-align: center;
+    position: relative;
+    cursor:pointer ;
+    display: block;
+    z-index: 1;
+    color: #00455e;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #FFAE00;
+    padding: 10px;
+    margin:1% 40%;
+        }
+
+.collapsible3 label:after{
+        content: "";
+        position: absolute;
+        height: 18px;
+        top: 10px;
+
+    }
+  .collapsible-text3{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: auto; 
+}
+.collapsible3 input:checked~ .collapsible-text3{
+    max-height: 300px;
+    box-shadow: coral;
+    opacity: 1;
+    top:0;
+}
+
 .services{
     margin-top: 2%;
     display: flex;
@@ -647,10 +764,84 @@ padding: 10px 0 10px;
 
     @media (max-width: 700px){
         .about-product h1{
-            font-size: 20px;
+            font-size: 16px;
+        }
+        .row_products{
+            margin-top: 10px;
+            display: grid;
+            justify-content: space-between;
+            }
+        .about-product{
+            display: grid;
+            flex-basis:50%;
+            padding: 10px 10px;
+            height: 100%;
+        }
+        .about-product img{
+            width: 100%;
+            height: 150px;
+            margin-top: 5px;
+            border-radius: 10px;
         } 
-      
+        .about-product h1{
+            font-size: 20px;
+        font-size: 16px;
+        }
+        .about-product p{
+            font-size: 10px;
+        }
+        /*---------products one---------*/
+        .collapsible input{
+            display: none; 
+            }
+
+        .collapsible label{
+            font-size: 14px;
+            display: block;
+            padding: 10px;
+            margin:1% 20%;
+            }
+        .collapsible-text{
+            overflow-x: scroll; 
+            }
+        /*---------products two---------*/
+            .collapsible2 input{
+                display: none; 
+                }
+                .collapsible2 label{
+                font-size: 14px;
+                display: block;
+                padding: 10px;
+                margin:1% 20%;
+                }
+            .collapsible-text2{
+                overflow-x: scroll; 
+                }
+  /*---------products three---------*/
+                .collapsible3 input{
+                    display: none; 
+                    }
+        
+                .collapsible3 label{
+                    font-size: 14px;
+                    display: block;
+                    padding: 10px;
+                    margin:1% 20%;
+                    }
+                .collapsible-text3{
+                    overflow-x: scroll; 
+                    }
+        .service p{
+            font-weight: 600;
+            font-size: 10px;
+             }
+        .service img{
+                height:40px;
+                width: 40px;
+        }
     }
+
+    
 /*---------blog-content---------*/
 .blog-content{
     width: 80%;
